@@ -6,7 +6,7 @@ $(document).ready(function(){
 
     var url = window.location.href;
     var queryString = url.substring( url.indexOf('?') + 1 );
-    
+
 
     var parseQueryString = function( queryString ) {
     var params = {}, queries, temp, i, l;
@@ -34,11 +34,11 @@ for (x in qString){
 $(".nextPage").click(function(){
   var page = $(this).val();
   console.log(page);
-  window.location="http://localhost:8000/" + page + '/?' + queryString;
+  window.location="https://ancient-mountain-98449.herokuapp.com/" + page + '/?' + queryString;
 });
 
 $("#homeButton").click(function(){
-  window.location = "http://localhost:8000" + '/?' + queryString;
+  window.location = "https://ancient-mountain-98449.herokuapp.com" + '/?' + queryString;
 });
 
 $("#urlButton").click(function(){
